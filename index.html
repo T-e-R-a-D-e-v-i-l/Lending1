@@ -14,38 +14,44 @@
 </head>
 <body>
     <header>
-        <div  id="hero">
-          <div class="hero_heder">
-              <div>
-                 <img src="logo.svg" width="100" height="100">
-               </div>
-              <div class="hero_navigation">
-                 <a href="#for_abonents" class="hero_navigation_item"> Стоимость</a>
-                 <a href="#reviews" class="hero_navigation_item"> Отзывы</a>
-               </div>
-                <div id="hero_telephone">
-                    <div id="hero_telephone_icons">
-                        <i class="fa-solid fa-phone"></i>
+        <div  class="hero_conteiner">
+            <div class="hero_overlay">
+                <div class="hero">
+                    <div class="hero_heder">
+                        <div>
+                           <img src="logo.svg" width="100" height="100">
+                         </div>
+                        <div class="hero_navigation">
+                           <a href="#for_abonents" class="hero_navigation_item"> Стоимость</a>
+                           <a href="#reviews" class="hero_navigation_item"> Отзывы</a>
+                         </div>
+                          <div class="hero_telephone">
+                              <div class="hero_telephone_icons">
+                                  <i class="fa-solid fa-phone"></i>
+                              </div>
+                              <p>+7 (123) 456-78-90</p>
+                         </div>
+                   </div>
+                     <div class="hero_title">
+                       <h1>Лучший способ заговорить на английском</h1>
                     </div>
-                    <p>+7 (123) 456-78-90</p>
-               </div>
-         </div>
-           <div id="hero_title">
-             <h1>Лучший способ заговорить на английском</h1>
-          </div>
-           <div id="hero_text">
-             <p>Занимайся онлайн в удобное время в любом месте!
-             Запишитесь на бесплатный пробный урок уже сегодня.</p>
-           </div>
-            <div>
-                <button class="button_large">Записаться на пробный урок</button>
+                     <div class="hero_text">
+                       <p>Занимайся онлайн в удобное время в любом месте!
+                       Запишитесь на бесплатный пробный урок уже сегодня.</p>
+                     </div>
+                      <div>
+                          <button class="button_large">Записаться на пробный урок</button>
+                      </div>
+                </div>
             </div>
+        
+         
         </div>       
     </header>
 
     <main>
         <div class="information">
-            <div id="information_title">
+            <div class="information_title">
                 <h2>Начните разговаривать с первого занятия</h2>
             </div>
              <div class="benifits">
@@ -88,7 +94,7 @@
             </div>
             <div class="about_us">
                 <div class="about_us_content">
-                    <h3 id="about_us_title">Мы научим говорить уверенно!</h3>
+                    <h3 class="about_us_title">Мы научим говорить уверенно!</h3>
                     <p class="about_us_text">
                         Мы считаем, что главная задача языка - помочь 
                         нам общаться друг с другом. Поэтому на наших 
@@ -110,52 +116,57 @@
                 </div>
             </div>
         </div>
-         <div class="free_lesson">
-            <h2 class="free_lesson_title">Запишитесь на бесплатный урок уже сегодня</h2>
-             <p class="free_lesson_text">Преподаватель определит ваш 
-              уровень и Вы пройдете полноценный первый урок </p>
-             <div class="free_lesson_form">
-                 <input id="free_lesson_input" maxlength="25" placeholder="Ваше имя">
-                 <input id="free_lesson_input" maxlength="25" placeholder="Ваш телефон">
-                 <button type="submit" class="button_large">Записаться на пробный урок</button>
+         <div class="free_lesson_conteiner">
+             <div class="free_lesson">
+                <h2 class="free_lesson_title">Запишитесь на бесплатный урок уже сегодня</h2>
+                <p class="free_lesson_text">Преподаватель определит ваш 
+                 уровень и Вы пройдете полноценный первый урок </p>
+                <div class="free_lesson_form">
+                    <input id="free_lesson_input" maxlength="25" placeholder="Ваше имя">
+                    <input id="free_lesson_input" maxlength="25" placeholder="Ваш телефон">
+                    <button type="submit" class="button_large">Записаться на пробный урок</button>
+                </div>
              </div>
         </div>
-        <div id="reviews">
-               <h2 class="reviews_title">
-                У нас уже более 500 довольных учеников!
-                </h2>
-              <div class="reviews_people">
-                <p id="reviews_people_name">Ольга Морозова</p>
-                <p id="reviews_people_text">
-                    Спасибо огромное преподавателю Марине. Я замимаюсь
-                    уже 6 месяцев и это лучшая школа иностранного языка,
-                    в которой я училась.
-                </p>
+        <div class="reviews_conteiner">
+            <div class="reviews">
+                <h2 class="reviews_title">
+                    У нас уже более 500 довольных учеников!
+                    </h2>
+                  <div class="reviews_people">
+                    <p class="reviews_people_name">Ольга Морозова</p>
+                    <p class="reviews_people_text">
+                        Спасибо огромное преподавателю Марине. Я замимаюсь
+                        уже 6 месяцев и это лучшая школа иностранного языка,
+                        в которой я училась.
+                    </p>
+                    </div>
+                <div class="reviews_people">
+                    <p class="reviews_people_name">Андрей Иванов</p>
+                    <p class="reviews_people_text">
+                      Я учил английский 10 лет с 5 класса, но так и не мог
+                       уверенно разговаривать даже на бытовые темы. Я начал 
+                       учиться в вашей школе всего 4 месяца назад и сейчас я 
+                       вернулся из путешествия, в котором уверенно мог общаться
+                        с таксистами, официантами и гидами. Теперь мне 
+                        нестрашно путешествовать!
+                    </p>
                 </div>
-            <div class="reviews_people">
-                <p id="reviews_people_name">Андрей Иванов</p>
-                <p id="reviews_people_text">
-                  Я учил английский 10 лет с 5 класса, но так и не мог
-                   уверенно разговаривать даже на бытовые темы. Я начал 
-                   учиться в вашей школе всего 4 месяца назад и сейчас я 
-                   вернулся из путешествия, в котором уверенно мог общаться
-                    с таксистами, официантами и гидами. Теперь мне 
-                    нестрашно путешествовать!
-                </p>
+                <div class="reviews_people">
+                    <p class="reviews_people_name">Настя Петрова</p>
+                    <p class="reviews_people_text">
+                        Мне очень нравится методика преподавания, на уроках
+                         мы очень много общаемся и не выполняем скучных задания 
+                         из учебников. Благодаря занятиям мой язык стал более 
+                         живой, современный, я узнала про сленг, а на прошлой
+                          неделе познакомилась с иностранцем!
+                    </p>
+                </div>
             </div>
-            <div class="reviews_people">
-                <p id="reviews_people_name">Настя Петрова</p>
-                <p id="reviews_people_text">
-                    Мне очень нравится методика преподавания, на уроках
-                     мы очень много общаемся и не выполняем скучных задания 
-                     из учебников. Благодаря занятиям мой язык стал более 
-                     живой, современный, я узнала про сленг, а на прошлой
-                      неделе познакомилась с иностранцем!
-                </p>
-            </div>
+              
         </div>
-        <div id="for_abonents">
-            <h2 id="for_abonents_title">Наши абонементы</h2>
+        <div class="for_abonents">
+            <h2 class="for_abonents_title">Наши абонементы</h2>
             <div class="for_abonents_prices">
                 <div class="price">
                     <p class="price_title">1 месяц</p>
@@ -233,14 +244,14 @@
     </main>
 
     <footer>
-        <div id="footer">
-            <div id="phone">
-                <div id="phone_icons">
+        <div class="footer">
+            <div class="phone">
+                <div class="phone_icons">
                     <i class="fa-solid fa-phone"></i>
                 </div>
                 <p>+7 (123) 456-78-90</p>
            </div>
-           <div id="social_media">
+           <div class="social_media">
             <i class="fab fa-instagram social_icons"></i>
             <i class="fab fa-facebook-square social_icons"></i>
             <i class="fab fa-twitter social_icons"></i>

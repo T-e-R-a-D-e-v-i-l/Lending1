@@ -1,72 +1,80 @@
-body{
-    margin: auto;
-    font-family: 'Nunito Sans', sans-serif;
-    max-width: 1024px;
-    width: 100%;
+body {
+    font-family: 'Nunito Sans', sans-serif; 
 }
 
-#hero{
+.hero_conteiner {
     background-image: url(images/hero.jpg);
     background-position: center top;
     background-size: cover;
     height: 800px;
-    display: block;
-    padding-left: 80px;
-    padding-right: 50px;
+    position: relative; 
 }
 
-.hero_heder{ 
+.hero_overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.hero {     
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hero_heder { 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-size: 18px;
 }
 
 
-.hero_navigation{
+.hero_navigation {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
+    flex-grow: 2;
 }
 
-.hero_navigation_item{
+.hero_navigation_item {
     margin: 10px;
 }
 
-#hero_telephone{
+.hero_telephone {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-#hero_telephone_icons{
+.hero_telephone_icons {
     margin-right: 10px;
 }
 
-#hero_title{
+.hero_title {
     display: block;
     font-size: 60px;
     font-weight: 600;
     text-align: start;
-    width: 500px;
-    height: 150px;
-    padding-top: 100px;
-    padding-bottom: 30px;
-    padding-left: 0px;  
+    max-width: 50%;
+    padding: 100px 0px 30px;  
 }
 
-#hero_text{
+.hero_text {
     display: block;
     font-size: 20px;
     font-weight: 200;
-    width: 400px;
-    height: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 0px;
+    line-height: 20px;
+    max-width: 40%;
+    padding: 50px 0px;
 }
 
-.button_large{
+.button_large {
     background-color: var(--orange-color);
     border-radius: 8px;
     border:none;
@@ -75,56 +83,57 @@ body{
     padding: 20px;
 }
 
-:root{
+:root {
     --orange-color: #f97316;
 }
 
-.button_large:hover{
+.button_large:hover {
     background-color: #ea580c;
 }
 
-#information_title{
+.information {
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+}
+
+.information_title {
     display: block;
     font-size: 35px;
     font-weight: 600;
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 50px;  
+    padding: 100px 0px 50px; 
 }
 
-.benifits{
+.benifits {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 30px;
+    justify-content: space-between;
+    align-items: stretch; 
 }
 
-.benifit_item{
+.benifit_item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 300px;
-    height: 180px;
+    align-items: center;   
+    width: 30%;
+    flex-grow: 1;
     background-color: #d6d3d13d;
     margin: 10px;
     border-radius: 10px;
     padding: 20px;
 }
 
-.benifit_item_icons{
+.benifit_item_icons {
     width: 50px;
     font-size: 25px;
     background-color: var(--orange-color);
     color: white;
     border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0px;
     text-align: center;
 }
 
-.benifit_item_title{
+.benifit_item_title {
     display: block;
     font-size: 18px;
     font-weight: 400;
@@ -132,7 +141,7 @@ body{
     padding: 15px;
 }
 
-.benifit_item_content{
+.benifit_item_content {
     display: block;
     font-size: 16px;
     font-weight: 200;
@@ -140,146 +149,153 @@ body{
     line-height: 20px;
 }
 
-.about_us{
+.about_us {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    padding-left: 50px;
-    margin-bottom: 50px;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto 50px auto;
 }
 
-#about_us_title{
+.about_us_title {
     font-size: 25px;
     font-weight: 600;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0px;
 }
 
-.about_us_text{
+.about_us_text {
     font-size: 16px;
     font-weight: 300;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0px;
     line-height: 20px;
 }
 
-.about_us_img{
+.about_us_img {
     max-width: 500px;
     padding-top: 50px;
     margin-left: 10px;
+    box-sizing: border-box;
 }
 
-.free_lesson{
+.free_lesson_conteiner {
+    background-color: #ffedd5;
+}
+
+.free_lesson {
     display: block;
     text-align: center;
     line-height: 50px;
-    background-color: #ffedd5;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0px;
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.free_lesson_title{
+.free_lesson_title {
     font-size: 35px;
     font-weight: 600;
 }
 
-.free_lesson_text{
+.free_lesson_text {
     font-size: 18px;
     font-weight: 300;
 }
 
-.free_lesson_form{
+.free_lesson_form {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 
-#free_lesson_input{
+#free_lesson_input {
     margin: 10px;
     border-radius: 8px;
     border: 1px solid #d6d3d1;
-    outline: inherit;
     height: 65px;
     font-size: 20px;
     color: #57534ec0;
 }
 
-#reviews{
+.reviews_conteiner {
+    background-color: #fafaf9;
+}
+
+.reviews {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fafaf9;
-    padding-top: 80px;
-    padding-bottom: 60px;
+    padding: 80px 0px 60px;
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.reviews_title{
+.reviews_title {
     font-size: 35px;
     font-weight: 500;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.reviews_people{
+.reviews_people {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #44403c80;
-    width: 600px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 600px;
+    width: 60%;
+    padding: 20px 0px;
 }
 
-#reviews_people_name{
+.reviews_people_name {
     font-size: 18px;
     font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0px;
 }
 
-#reviews_people_text{
+.reviews_people_text {
     font-size: 16px;
     font-weight: 200px;
     color: #44403cfa;
     line-height: 20px;
 }
 
-#for_abonents{
+.for_abonents {
     padding-top: 100px;
     margin-bottom: 100px;
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
 }
 
-#for_abonents_title{
+.for_abonents_title {
     font-size: 40px;
     font-weight: 600;
     text-align: center;
 }
 
-.for_abonents_prices{
+.for_abonents_prices {
     display:flex;
-    flex-direction: row;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0px;
 }
 
-.price{
+.price {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
-    width: 500px;
-    height: 300px;
+    width: calc(100% / 3 - 20px);
     margin: 20px;
-    padding: 30px 15px 20px 15px;
+    padding: 30px 15px 20px;
     border: 1px solid #d6d3d1;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
-.price_detals{
+.price_detals {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -287,72 +303,192 @@ body{
     margin-bottom: 20px;
 }
 
-.price_title{
+.price_title {
     color: #f97316;
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-.price_lesson{
+.price_lesson {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-.price_detal{
+.price_detal {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
 }
 
-.check_icon{
+.check_icon {
     color:#65a30d;
     margin: 5px;
 }
 
-.price_detal_text{
+.price_detal_text {
     color: #78716c;
     font-size: 14px; 
 }
 
-.button_small{
+.button_small {
     background-color:#ffedd5;
     border-radius: 8px;
     border:none;
     color: #f97316;
     font-size: 16px;
-    padding: 10px 50px 10px 50px;
+    padding: 10px 50px;
 }
 
-.button_small:hover{
+.button_small:hover {
     background-color: #fed7aa;
 }
 
-#footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+footer {
     background-color: #d6d3d19a;
-    padding: 50px 20px 50px 20px;
-    color: #57534eb7;
+    height: 150px;
 }
 
-#phone{
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: #57534eb7;
+    margin: auto;
+    max-width: 1024px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.phone {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-#phone_icons{
+.phone_icons {
     margin-right: 10px;
 }
 
-.social_icons{
+.social_icons {
     font-size: 23px;
     margin: 5px;
 }
 
-.social_icons:hover{
+.social_icons:hover {
     color: black;
+}
+
+@media (max-width: 600px) {
+
+    .hero_overlay {
+        background: rgba(255, 255, 255, 0.6);
+    }
+
+    .hero {
+        padding: 0px 15px;
+    }
+
+    .hero_heder {
+        flex-wrap: wrap;
+    }
+
+    .hero_title {
+        font-size: 40px;
+        padding-top: 50px;
+    }
+
+    .information {
+        padding: 0px 15px;
+    }
+
+    .benifits {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benifit_item {
+        width: 80%;
+    }
+
+    .about_us {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_us_img {
+        padding-top: 0px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .free_lesson {
+        padding: 30px 15px 50px;
+        line-height: 30px;
+    }
+
+    .free_lesson_title {
+        font-size: 30px;
+        padding: 10px 0px 30px;
+    }
+
+    .free_lesson_text {
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    .free_lesson_form {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    #free_lesson_input {
+       height: 50px;
+       width: 95%;
+       margin: 10px 0px 5px;
+    }
+
+    .button_large {
+        margin-top: 10px;
+    }
+
+    .reviews {
+        padding: 50px 15px 50px;
+        margin-top: 70px;
+    }
+
+    .reviews_people {
+        width: 100%;
+    }
+
+    .for_abonents {
+        padding: 0px 15px;
+    }
+
+    .for_abonents_prices {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price {
+        width: 80%;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
