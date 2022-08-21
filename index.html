@@ -22,15 +22,20 @@
                            <img src="logo.svg" width="100" height="100">
                          </div>
                         <div class="hero_navigation">
-                           <a href="#for_abonents" class="hero_navigation_item"> Стоимость</a>
+                           <a href="#about_us_blok" class="hero_navigation_item"> О нас</a>
                            <a href="#reviews" class="hero_navigation_item"> Отзывы</a>
-                         </div>
-                          <div class="hero_telephone">
-                              <div class="hero_telephone_icons">
-                                  <i class="fa-solid fa-phone"></i>
-                              </div>
-                              <p>+7 (123) 456-78-90</p>
-                         </div>
+                           <a href="#price" class="hero_navigation_item"> Стоимость</a>
+                           <a href="#contacts" class="hero_navigation_item"> Контакты</a>
+                        </div>
+                        <div class="mobile_menu">
+                            <button onclick="myMenu()" class="buttonMenu">МЕНЮ</button>
+                            <div id="mobile_container" class="mobile_menu_content">
+                               <a href="#about_us_blok" class="hero_navigation_item"> О нас</a>
+                               <a href="#reviews" class="hero_navigation_item"> Отзывы</a>
+                               <a href="#price" class="hero_navigation_item"> Стоимость</a>
+                               <a href="#contacts" class="hero_navigation_item"> Контакты</a>
+                            </div>
+                         </div>                         
                    </div>
                      <div class="hero_title">
                        <h1>Лучший способ заговорить на английском</h1>
@@ -50,7 +55,7 @@
     </header>
 
     <main>
-        <div class="information">
+        <div id="about_us_blok" class="information">
             <div class="information_title">
                 <h2>Начните разговаривать с первого занятия</h2>
             </div>
@@ -128,7 +133,7 @@
                 </div>
              </div>
         </div>
-        <div class="reviews_conteiner">
+        <div id="reviews" class="reviews_conteiner">
             <div class="reviews">
                 <h2 class="reviews_title">
                     У нас уже более 500 довольных учеников!
@@ -165,7 +170,7 @@
             </div>
               
         </div>
-        <div class="for_abonents">
+        <div id="price" class="for_abonents">
             <h2 class="for_abonents_title">Наши абонементы</h2>
             <div class="for_abonents_prices">
                 <div class="price">
@@ -244,7 +249,7 @@
     </main>
 
     <footer>
-        <div class="footer">
+        <div id="contacts" class="footer">
             <div class="phone">
                 <div class="phone_icons">
                     <i class="fa-solid fa-phone"></i>
@@ -260,6 +265,19 @@
 
         </div>
     </footer>
+    <script>
+        let isOpen = false
+        function myMenu() {
+            const container = document.getElementById("mobile_container")
+            if (isOpen) {
+                container.style.display = "none"
+                isOpen = false
+            } else {
+                container.style.display = "flex"
+                isOpen = true
+            }            
+        }
+    </script>
     
 </body>
 </html>
