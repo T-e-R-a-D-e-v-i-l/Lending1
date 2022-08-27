@@ -28,7 +28,12 @@
                            <a href="#contacts" class="hero_navigation_item"> Контакты</a>
                         </div>
                         <div class="mobile_menu">
-                            <button onclick="myMenu()" class="buttonMenu">МЕНЮ</button>
+                            <button onclick="myMenu()" class="buttonMenu" id="buttonOpen">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <button onclick="myMenu()" class="buttonMenu" id="buttonClose">
+                                <i class="fas fa-times-circle"></i>
+                            </button>
                             <div id="mobile_container" class="mobile_menu_content">
                                <a href="#about_us_blok" class="hero_navigation_item"> О нас</a>
                                <a href="#reviews" class="hero_navigation_item"> Отзывы</a>
@@ -265,19 +270,6 @@
 
         </div>
     </footer>
-    <script>
-        let isOpen = false
-        function myMenu() {
-            const container = document.getElementById("mobile_container")
-            if (isOpen) {
-                container.style.display = "none"
-                isOpen = false
-            } else {
-                container.style.display = "flex"
-                isOpen = true
-            }            
-        }
-    </script>
-    
+    <script src="script.js"></script>    
 </body>
 </html>

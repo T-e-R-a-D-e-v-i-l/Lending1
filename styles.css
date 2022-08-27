@@ -47,6 +47,11 @@ body {
     position: absolute;
 }
 
+#buttonOpen,  #buttonClose {
+    font-size: 50px;
+    color: var(--orange-color);
+}
+
 .hero_navigation_item {
     margin: 10px;
 }
@@ -428,8 +433,16 @@ footer {
         margin-top: 30px;
     }
 
+    #buttonClose {
+        display: none;
+    }
+
     .buttonMenu:hover, .buttonMenu:focus {
         background-color:  rgba(165, 13, 13, 0);
+    }
+
+    #mobile_container {
+        display: none;
     }
 
     .mobile_menu_content {
